@@ -6,6 +6,7 @@ body {
     font-family: cursive;
 }
 .section {
+    padding: 20px 40px;
     background-color: palegreen;
     border: 2px solid green;
 }
