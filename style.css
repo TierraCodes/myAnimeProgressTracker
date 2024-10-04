@@ -75,5 +75,25 @@ body {
     text-decoration: underline green;
 }
 .indexImages{
-    width: 100px;
+    height: 300px;
+}
+#homePagePics{
+    display: inline;
+}
+#homePageLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#pic1 {
+    display: inline;
+}
+#pic2 {
+    display: none;
+}
+#pic3 {
+    display: none;
+}
+#pic4 {
+    display: none;
 }

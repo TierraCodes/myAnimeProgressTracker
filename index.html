@@ -12,7 +12,7 @@
         <a href = "index.html">Home</a>
         <a href = "#about me" style="float: right">About Me</a>
         <div class="dropdownMenu">
-            <button class="dropdownButton"> Anime</button>
+            <button class="dropdownButton">Anime</button>
             <div class="dropdownList">
                 <a href="MyHeroAcademia.html">My Hero Academia</a>
                 <a href="AttackOnTitan.html">Attack on Titan</a>
@@ -25,25 +25,32 @@
     <p>
         <div class = "section">
             <div><h1 id = "mainHeader">Anime Progress Tracker</h1></div>
-            <div>My hero Academia</div>
-            <p>
-                <a href="MyHeroAcademia.html">
-                    <img class="indexImages" src="media/myHeroAcademia.jpg" alt="">
-                </a>
-                <a href="AttackOnTitan.html">
-                    <img class="indexImages" src="media/attackOnTitan.jpg" alt="">
-                </a>
-                <a href="Horimiya.html">
-                    <img class="indexImages" src="media/horimiya.jpg" alt="">
-                </a>
-                <a href="FromMeToYou.html">
-                    <img class="indexImages" src="media/fromMeToYou.jpg" alt="">
-                </a>
+            <div>My Hero Academia</div>
+            <p id="homePageLayout">
+                <div><button id="backButton" onclick="goBack()"><</button></div>
+                <div id="homePagePics">
+                    <div>
+                        <a href="MyHeroAcademia.html">
+                            <img class="indexImages" id="pic1"src="media/myHeroAcademia.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="AttackOnTitan.html">
+                            <img class="indexImages" id="pic2" src="media/attackOnTitan.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="Horimiya.html">
+                            <img class="indexImages" id="pic3" src="media/horimiya.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="FromMeToYou.html">
+                            <img class="indexImages" id="pic4" src="media/fromMeToYou.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div><button id="nextButton" onclick="goNext()">></button></div>
             </p>
         </div>
     </p>
     <footer></footer>
     <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/app.js" crossorigin="anonymous"></script>
 </body>
 </html>
