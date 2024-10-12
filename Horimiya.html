@@ -10,30 +10,43 @@
     <div id = animation></div>
     <div class="navBar">
         <a href = "index.html">Home</a>
-        <a href = "#about me" style="float: right">About Me</a>
+        <a href = "AboutMe.html" style="float: right">About Me</a>
         <div class="dropdownMenu">
-            <button class="dropdownButton"> Anime
-                <i class = "downArrow"></i>
-            </button>
+            <button class="dropdownButton">Anime</button>
             <div class="dropdownList">
                 <a href="MyHeroAcademia.html">My Hero Academia</a>
                 <a href="AttackOnTitan.html">Attack on Titan</a>
                 <a href="Horimiya.html">Horimiya</a>
                 <a href="FromMeToYou.html">From Me to You</a>
+                <a href="SaikiK.html">Saiki-K</a>
             </div>
         </div>
     </div>
 
     <p>
         <div class = "section">
-            <div><h1 class = "animeHeaders">Horimiya</h1></div>
-            <div>Horimiya info</div>
-            <section>
-                <img class = "animePagePics" src="media/horimiya.jpg"></img>
-            </section>
+            <div>
+                <h1 class = "animeHeaders">Horimiya</h1>
+                <details>Horimiya info</details>
+            </div>
+            <div class = "animePageLayout">
+                <section class="leftAnimeColumn">
+                    <img class = "animePagePics" src="media/horimiya.jpg" alt="Horimiya anime cover image."></img>
+                </section>
+                <section class="rightAnimeColumn">
+                    <div>
+                        <p class="progressBar"></p>
+                        <p>Last Episode Watched: <br> Season 5 Episode 99 - Our Brawl</p>
+                        <img class = "episodePics" src="media/myHeroAcademia2.jpg" alt="My Hero Academia Season 5, Episode 99 thumbnail image.">
+                        <p>Total Episodes: 158 - (ongoing)</p>
+                    </div>
+                </section>
+            </div>
         </div>
     </p>
-    <footer></footer>
+    <p>
+        <footer>Thanks for Stopping By!</footer>
+    </p>
     <script src="app.js"></script>
 </body>
 </html>
