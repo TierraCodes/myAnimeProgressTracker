@@ -43,6 +43,8 @@ emptyProgressBar[i].addEventListener("click", () =>{
     emptyProgressBar[i].classList.toggle("fullProgressBar")
     emptyProgressBar[i].classList.remove("emptyProgressBar")
     
+    fullProgressBar[i].innerHTML = ''
     fullProgressBar[i].style.background = `linear-gradient(to right, green ${progress}%, floralwhite 0%)`
+    fullProgressBar[i].style.transitionDuration = "3s"
     i++
 })
