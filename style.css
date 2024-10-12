@@ -98,14 +98,24 @@ body {
     height: 363px;
     padding: 15px;
 }
-#progressBar{
+/*empty progress bar*/
+.emptyProgressBar{
     height: 20px;
     width: 200px;
     background-color: floralwhite;
     border: 5px solid darkgreen;
     border-radius: 25px;
     margin-left: 45px;
-    &.button:active
+}
+/*filled progress bar*/
+.fullProgressBar{
+    height: 20px;
+    width: 200px;
+    background: linear-gradient(to right, green 1%, floralwhite 0%);
+    background-color: floralwhite;
+    border: 5px solid darkgreen;
+    border-radius: 25px;
+    margin-left: 45px;
 }
 .animeHeaders{
     font-size: xx-large;

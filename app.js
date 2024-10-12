@@ -1,11 +1,11 @@
-let indexPics = document.getElementsByClassName("indexImages");
-let backButton = document.getElementById("backButton");
-let nextButton = document.getElementById("nextButton");
+const indexPics = document.getElementsByClassName("indexImages");
+const backButton = document.getElementById("backButton");
+const nextButton = document.getElementById("nextButton");
 let currentIndex = 0;
 
-nextButton.addEventListener("click", goNext)
+//nextButton.addEventListener("click", goNext)
 
-backButton.addEventListener("click", goBack)
+//backButton.addEventListener("click", goBack)
 
 function goNext(){
     indexPics[currentIndex].setAttribute("id","pic5");
@@ -14,6 +14,7 @@ function goNext(){
         currentIndex = 0;
     }
     indexPics[currentIndex].setAttribute("id","pic1");
+    return
 }
 
 function goBack(){
@@ -25,11 +26,23 @@ function goBack(){
     indexPics[currentIndex].setAttribute("id","pic1");
 }
 
-let progressBar = document.getElementById("progressBar")
+let emptyProgressBar = document.getElementsByClassName("emptyProgressBar")
+let fullProgressBar = document.getElementsByClassName("fullProgressBar")
+let pageName = document.getElementsByTagName("title")
+let progress = 0
 
-progressBar.background.addEventListener("click", showProgress);
 
-function showProgress(){
-    let progress = 62.66
-    progressBar.style.background = `linear-gradient(green ${progress}%, floralwhite ${100-progress}%)`
-}
+let i = 0
+emptyProgressBar[i].addEventListener("click", () =>{
+    if (pageName[i].innerText == "My Hero Academia"){
+        progress = 63
+    } else {
+        progress = 25
+    }
+
+    emptyProgressBar[i].classList.toggle("fullProgressBar")
+    emptyProgressBar[i].classList.remove("emptyProgressBar")
+    
+    fullProgressBar[i].style.background = `linear-gradient(to right, green ${progress}%, floralwhite 0%)`
+    i++
+})
