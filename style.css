@@ -1,11 +1,14 @@
 body {
     background-color: palegoldenrod;
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
     width: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .section {
     padding: 20px;
@@ -76,46 +79,35 @@ body {
 }
 .episodePics {
     width: 300px;
-    margin-top: 10px;
     border: 5px solid darkgreen;
+    border-radius: 25px;
 }
 .animePageLayout{
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
 }
 .leftAnimeColumn {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 363px;
+    height: auto;
     padding: 15px;
 }
 .rightAnimeColumn {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 363px;
+    height: auto;
     padding: 15px;
 }
-/*empty progress bar*/
 .emptyProgressBar{
     height: 20px;
     width: 200px;
     background: floralwhite;
     border: 5px solid darkgreen;
     border-radius: 25px;
-    margin-left: 45px;
-}
-/*filled progress bar*/
-.fullProgressBar{
-    height: 20px;
-    width: 200px;
-    background: linear-gradient(to right, green 1%, floralwhite 0%);
-    background-color: floralwhite;
-    border: 5px solid darkgreen;
-    border-radius: 25px;
-    margin-left: 45px;
+    margin: auto;
 }
 .animeHeaders{
     font-size: xx-large;
@@ -157,7 +149,9 @@ ul {
 }
 .aboutMePics {
     max-width: 250px;
-    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    border: 5px solid darkgreen;
 }
 #aboutMePicLayout {
     display: flex;
