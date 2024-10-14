@@ -10,6 +10,9 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+body:after{
+    background: scroll;
+}
 .section {
     padding: 20px;
     background-color: palegreen;
@@ -109,10 +112,7 @@ body {
     border-radius: 25px;
     margin: auto;
 }
-.animeHeaders{
-    font-size: xx-large;
-}
-#mainHeader{
+h1{
     font-size: xx-large;
     text-align: center;
     text-decoration: underline green;
