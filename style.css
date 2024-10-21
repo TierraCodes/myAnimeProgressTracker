@@ -26,7 +26,7 @@ body:after{
 .navBar a {
     float: left;
     border: 1px solid darkgreen;
-    color: black;
+    color: floralwhite;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -34,6 +34,7 @@ body:after{
     font-weight: bold;
 }
 .navBar a:hover, .dropdownMenu:hover .dropdownButton{
+    color: black;
     background-color: floralwhite;
 }
 .dropdownMenu {
@@ -42,7 +43,7 @@ body:after{
 }
 .dropdownMenu .dropdownButton{
     border: 1px solid darkgreen;
-    color: black;
+    color: floralwhite;
     text-align: center;
     background-color: inherit;
     font-family: inherit;
@@ -74,7 +75,6 @@ body:after{
 .dropdownMenu:hover .dropdownList {
     display: block;
 }
-
 .animePagePics{
     width: 250px;
     height: 350px;
@@ -108,7 +108,7 @@ body:after{
     height: 20px;
     width: 200px;
     background: floralwhite;
-    border: 5px solid darkgreen;
+    border: 3px solid darkgreen;
     border-radius: 25px;
     margin: auto;
 }
@@ -160,7 +160,7 @@ ul {
 }
 
 
-/* Shell of code taken from W3Schools for pretty buttons!*/
+/* Shell of code taken from W3Schools for pretty arrow buttons!*/
 .button {
     display: inline;
     padding: 5px, 10px;
@@ -169,12 +169,13 @@ ul {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: black;
+    color: floralwhite;
     background-color: green;
     border-radius: 15px;
-    box-shadow: 0px 4px;
+    box-shadow: 0px 4px black;
 }
 .button:hover {
+    color: black;
     background-color: floralwhite;
 }
 .button:active {
